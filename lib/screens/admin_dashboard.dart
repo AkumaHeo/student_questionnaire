@@ -12,7 +12,6 @@ class _AdminDashboardState extends State<AdminDashboard> {
   final TextEditingController _studentNameController = TextEditingController();
   String? _selectedDepartment;
 
-  
   List<String> departments = [
     'Computer Science',
     'Statistic',
@@ -43,7 +42,7 @@ class _AdminDashboardState extends State<AdminDashboard> {
         _studentIdController.clear();
         _studentNameController.clear();
         setState(() {
-          _selectedDepartment = null; 
+          _selectedDepartment = null;
         });
       } catch (e) {
         print("Error adding student: $e");
@@ -75,8 +74,7 @@ class _AdminDashboardState extends State<AdminDashboard> {
               controller: _studentIdController,
               keyboardType: TextInputType.number,
               inputFormatters: [
-                LengthLimitingTextInputFormatter(
-                    14), 
+                LengthLimitingTextInputFormatter(14),
                 FilteringTextInputFormatter.digitsOnly, // Allow only digits
               ],
               decoration: InputDecoration(
@@ -134,7 +132,7 @@ class _AdminDashboardState extends State<AdminDashboard> {
                   );
                 }
               },
-              child: Text("Add Stvnudent", style: TextStyle(color: Colors.white)),
+              child: Text("Add Student", style: TextStyle(color: Colors.white)),
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.black,
                 padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15),
