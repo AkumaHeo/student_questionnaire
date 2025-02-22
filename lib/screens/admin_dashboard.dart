@@ -134,7 +134,7 @@ class _AdminDashboardState extends State<AdminDashboard> {
                   );
                 }
               },
-              child: Text("Add Student", style: TextStyle(color: Colors.white)),
+              child: Text("Add Stvnudent", style: TextStyle(color: Colors.white)),
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.black,
                 padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15),
