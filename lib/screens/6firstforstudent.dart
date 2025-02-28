@@ -47,7 +47,7 @@ class Header extends StatelessWidget {
           SizedBox(height: 30),
           Center(
             child: Text(
-              'Student Hhhome',
+              'Student Home',
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.w400),
             ),
           ),
